@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="@drawable/abcd">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="300dp"
+        android:hint="Search City"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:id="@+id/search"
+            />
+    </LinearLayout>
+    <TextView
+        android:id = "@+id/City"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id = "@+id/LastUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id = "@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id = "@+id/Humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id = "@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id = "@+id/Celsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <TextView
+
+        android:id = "@+id/result"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+</LinearLayout>
