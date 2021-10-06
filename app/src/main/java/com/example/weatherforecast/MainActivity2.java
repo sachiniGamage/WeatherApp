@@ -56,16 +56,10 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
 
     int MY_PERMISSION = 0;
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
-
 
         //Control
         City = (TextView) findViewById(R.id.City);
@@ -81,37 +75,18 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
         cName = txtSearch.getText().toString();
         result = (TextView) findViewById(R.id.result);
 
-
-
-
-
-
-
-
-
         search.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Log.e("TAG", "Search");
 
-
                 Searchh sh = new Searchh();
                 sh.srch(txtSearch,search,result);
-
 
                 Log.e("TAG", "Search1");
                 return  true;
             }
         });
-
-
-
-
-
-
-
-
-
 
         //Get Coordinate
         locationManager = (LocationManager) getSystemService((Context.LOCATION_SERVICE));
@@ -144,33 +119,7 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
 
         new GetWeather().execute(Common.apiRequest(String.valueOf(lat),String.valueOf(lng)));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 
     @Override
     protected void onPause() {
@@ -200,8 +149,6 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
         lat=location.getLatitude();
         lng = location.getLongitude();
 
-
-
         new GetWeather().execute(Common.apiRequest(String.valueOf(lat),String.valueOf(lng)));
 
     }
@@ -221,19 +168,6 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     private  class GetWeather extends AsyncTask<String,Void,String>{
 
         ProgressDialog pd = new ProgressDialog(MainActivity2.this);
@@ -244,8 +178,6 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
             pd.setTitle("Please wait ...");
             pd.show();
         }
-
-
 
         @Override
         protected String doInBackground(String... strings) {
@@ -287,6 +219,5 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
-
 
 }

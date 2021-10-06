@@ -26,10 +26,6 @@ public class MainActivity extends AppCompatActivity {
         SignIn = (Button)findViewById(R.id.SignIn);
         SignUp = (Button)findViewById(R.id.SignUp);
 
-
-
-
-
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //sign up
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //sign in
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

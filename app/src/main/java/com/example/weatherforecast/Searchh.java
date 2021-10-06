@@ -31,34 +31,6 @@ public class Searchh  extends AppCompatActivity {
     String cName;
     ImageView search;
 
-
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_sign_up);
-//
-//        search.OnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.e("TAG", "Search");
-//                Searchh sh = new Searchh();
-//                sh.srch();
-//
-//
-//                Log.e("TAG", "Search1");
-//            }
-//        });
-//
-//    }
-
-
-
-
-
-
-
-
-
     class  W extends AsyncTask<String,Void,String> {
 
         @Override
@@ -92,22 +64,12 @@ public class Searchh  extends AppCompatActivity {
             return null;
         }
 
-
-
-
     }
 
-
-
-
-
-
+    //search
     public void srch(EditText txtSearch, ImageView search, TextView result){
-//        txtSearch = (EditText)findViewById(R.id.txtSearch);
-        cName = txtSearch.getText().toString();
-//        search = (ImageView)findViewById(R.id.search);
-//        result = (TextView) findViewById(R.id.result);
 
+        cName = txtSearch.getText().toString();
 
         String  content;
         W wether = new W();

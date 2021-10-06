@@ -47,10 +47,7 @@ public class SignIn extends AppCompatActivity {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference table_user = database.getReference("User");
 
-
-
-
-
+        //Forget passwrod
         fgtPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,11 +56,6 @@ public class SignIn extends AppCompatActivity {
                 passwordResetDialog.setTitle("Reset Password?");
                 passwordResetDialog.setMessage("Enter Your Email To Received Reset Link.");
                 passwordResetDialog.setView(resetMail);
-
-
-
-
-
 
                 passwordResetDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -95,10 +87,6 @@ public class SignIn extends AppCompatActivity {
                 passwordResetDialog.create().show();
             }
         });
-
-
-
-
 
 
         SignIn.setOnClickListener(new View.OnClickListener() {
@@ -134,15 +122,10 @@ public class SignIn extends AppCompatActivity {
                         }
                     }
 
-
-
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
 
                     }
-
-
-
 
                 });
             }

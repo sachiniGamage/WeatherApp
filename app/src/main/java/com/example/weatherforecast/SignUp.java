@@ -50,8 +50,6 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
                 final ProgressDialog mDialog = new ProgressDialog(SignUp.this);
                 mDialog.setMessage(("Please waiting ....."));
                 mDialog.show();
