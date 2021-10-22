@@ -87,7 +87,6 @@ public class Searchh  extends AppCompatActivity {
             String main = "";
             String description = "";
 
-
             for (int i = 0; i<array.length();i++){
                 JSONObject weatherPart = array.getJSONObject(i);
                 main = weatherPart.getString("main");
@@ -95,15 +94,11 @@ public class Searchh  extends AppCompatActivity {
             }
             Log.e("TAG", "Weather");
 
-
             JSONObject jsonObject1 = jsonObject.getJSONObject("main");
             String temp= jsonObject1.getString("temp");
 
             JSONObject jsonObject2 = jsonObject.getJSONObject("main");
             int Humidity= jsonObject2.getInt("humidity");
-
-
-
             result.setText("City: "+cName+"\nMain: "+main+"\nDescription: "+description+"\nTemp  : "+temp+"\nHumidity: "+Humidity +"%");
         } catch (InterruptedException e) {
             e.printStackTrace();

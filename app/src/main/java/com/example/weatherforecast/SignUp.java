@@ -26,7 +26,6 @@ public class SignUp extends AppCompatActivity {
     Button SignUp;
     FirebaseAuth firebaseAuth;
 
-
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

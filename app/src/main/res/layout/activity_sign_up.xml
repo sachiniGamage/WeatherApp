@@ -32,8 +32,6 @@
             app:met_singleLineEllipsis="true"
             />
 
-
-
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/Name"
             android:hint="Name"
@@ -68,7 +66,6 @@
             app:met_singleLineEllipsis="true"
             />
 
-
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/Password"
             android:hint="Password"
@@ -86,7 +83,6 @@
             app:met_singleLineEllipsis="true"
             />
 
-
     </LinearLayout>
 
     <Button
@@ -98,7 +94,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-
         />
 
 </RelativeLayout>

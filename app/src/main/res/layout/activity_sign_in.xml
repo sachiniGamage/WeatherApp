@@ -49,9 +49,6 @@
             app:met_singleLineEllipsis="true"
             />
 
-
-
-
         <com.rengwuxian.materialedittext.MaterialEditText
             android:id="@+id/Password"
             android:hint="Password"
@@ -74,8 +71,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnForgotpsw"
             android:text="Forgot Password?"
-/>
-
+            />
 
     </LinearLayout>
 
@@ -88,8 +84,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-
-
         />
 
 </RelativeLayout>
